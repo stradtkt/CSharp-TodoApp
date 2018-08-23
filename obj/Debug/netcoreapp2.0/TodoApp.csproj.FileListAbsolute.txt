@@ -1,0 +1,11 @@
+C:\Users\Kevin\Desktop\csharp\coding-dojo\TodoApp\bin\Debug\netcoreapp2.0\TodoApp.deps.json
+C:\Users\Kevin\Desktop\csharp\coding-dojo\TodoApp\bin\Debug\netcoreapp2.0\TodoApp.runtimeconfig.json
+C:\Users\Kevin\Desktop\csharp\coding-dojo\TodoApp\bin\Debug\netcoreapp2.0\TodoApp.runtimeconfig.dev.json
+C:\Users\Kevin\Desktop\csharp\coding-dojo\TodoApp\bin\Debug\netcoreapp2.0\TodoApp.dll
+C:\Users\Kevin\Desktop\csharp\coding-dojo\TodoApp\bin\Debug\netcoreapp2.0\TodoApp.pdb
+C:\Users\Kevin\Desktop\csharp\coding-dojo\TodoApp\obj\Debug\netcoreapp2.0\TodoApp.csprojResolveAssemblyReference.cache
+C:\Users\Kevin\Desktop\csharp\coding-dojo\TodoApp\obj\Debug\netcoreapp2.0\TodoApp.csproj.CoreCompileInputs.cache
+C:\Users\Kevin\Desktop\csharp\coding-dojo\TodoApp\obj\Debug\netcoreapp2.0\TodoApp.AssemblyInfoInputs.cache
+C:\Users\Kevin\Desktop\csharp\coding-dojo\TodoApp\obj\Debug\netcoreapp2.0\TodoApp.AssemblyInfo.cs
+C:\Users\Kevin\Desktop\csharp\coding-dojo\TodoApp\obj\Debug\netcoreapp2.0\TodoApp.dll
+C:\Users\Kevin\Desktop\csharp\coding-dojo\TodoApp\obj\Debug\netcoreapp2.0\TodoApp.pdb

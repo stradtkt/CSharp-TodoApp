@@ -1,0 +1,13 @@
+﻿body {
+    background: rgba(180,180,180,0.5);
+}
+
+.nav-item.dropdown .nc-button-power {
+    font-size: 24px;
+}
+
+.nav-item.dropdown {
+    margin: 0 auto;
+    position: relative;
+    left: 32em;
+}
