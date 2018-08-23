@@ -40,6 +40,24 @@ namespace TodoApp.Controllers
             return View("AddTodo");
         }
 
+        [HttpGet("{todoid}Edit")]
+        public IActionResult Edit(int todoid)
+        {
+            ViewBag.single = _todoFactory.FindById(todoid);
+            return View();
+        }
+
+        [HttpPost("{todoid}/Edit/EditTodo")]
+        public IActionResult EditTodo(int todoid)
+        {
+            if(ModelState.IsValid)
+            {
+                _todoFactory.EditTodo(todoid);
+                return RedirectToAction("SingleTodo");
+            }
+            return View("Edit");
+        }
+
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });

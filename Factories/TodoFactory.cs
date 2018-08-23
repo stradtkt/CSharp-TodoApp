@@ -43,5 +43,25 @@ namespace TodoApp.Factory
                 return dbConnection.Query<Todo>("SELECT * FROM todos");
             }
         }
+        public Todo FindById(int id)
+        {
+            using(IDbConnection dbConnection = Connection)
+            {
+                var query = "SELECT * FROM todos WHERE id = @ID";
+                object param = new {ID = id};
+                var item = dbConnection.Query<Todo>(query, param);
+                return item.First();
+            }
+        }
+        public void EditTodo(int id)
+        {
+            using(IDbConnection dbConnection = Connection)
+            {
+                var query = "UPDATE todos WHERE id = @ID";
+                object param = new {ID = id};
+                dbConnection.Open();
+                dbConnection.Execute(query, param);
+            }
+        }
     }
 }
