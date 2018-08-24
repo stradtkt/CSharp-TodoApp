@@ -3,26 +3,11 @@
 
 <div class="row">
     <div class="col-md-8 offset-2">
-        @if(ViewBag.delete) 
-        {
-            <div class="bg-success">
-                <p class="text-center">@ViewBag.delete</p>
-            </div>
-        }
-        else if(ViewBag.added)
-        {
-            <div class="bg-success">
-                <p class="text-center">@ViewBag.added</p>
-            </div>
-        }
         @foreach(var todo in ViewBag.todos)
         {
         <div class="card">
             <div class="card-body">
                 <h6 class="card-category text-center">@todo.title</h6>
-                <div class="card-icon">
-                <i class="nc-icon nc-spaceship"></i>
-                </div>
                 <p class="card-description text-center">@todo.description <br> @todo.due_date</p>
                 <div class="card-footer">
                 <a href="@todo.id/Delete" class="btn btn-danger btn-round card-link">

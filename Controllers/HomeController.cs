@@ -59,11 +59,9 @@ namespace TodoApp.Controllers
             }
             return View("Edit");
         }
-        [HttpPost("{todoid}/Delete")]
+        [HttpGet("{todoid}/Delete")]
         public IActionResult Delete(int todoid)
-        {
-            TempData["Delete"] = "Deleted Todo";
-            ViewBag.delete = TempData["Delete"]; 
+        { 
             _todoFactory.DeleteTodo(todoid);
             return RedirectToAction("Index");
         }
