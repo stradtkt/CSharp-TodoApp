@@ -63,5 +63,15 @@ namespace TodoApp.Factory
                 dbConnection.Execute(query, param);
             }
         }
+        public void DeleteTodo(int id)
+        {
+            using(IDbConnection dbConnection = Connection)
+            {
+                var query = "DELETE todos WHERE id = @ID";
+                object param = new {ID = id};
+                dbConnection.Open();
+                dbConnection.Execute(query, param);
+            }
+        }
     }
 }

@@ -19,7 +19,7 @@ namespace TodoApp.Models
 
         [Required(ErrorMessage="Due date is required")]
         [Display(Name="Due Date")]
-        [DataType(DataType.DateTime)]
+        [DataType(DataType.Date)]
         public DateTime due_date {get;set;}
 
         public DateTime created_at {get;set;}

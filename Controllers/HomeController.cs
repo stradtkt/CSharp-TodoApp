@@ -35,12 +35,14 @@ namespace TodoApp.Controllers
             if(ModelState.IsValid)
             {
                 _todoFactory.CreateTodo(todo);
+                TempData["Added"] = "Todo successfully created";
+                ViewBag.added = TempData["Added"];
                 return RedirectToAction("Index");
             }
             return View("AddTodo");
         }
 
-        [HttpGet("{todoid}Edit")]
+        [HttpGet("{todoid}/Edit")]
         public IActionResult Edit(int todoid)
         {
             ViewBag.single = _todoFactory.FindById(todoid);
@@ -56,6 +58,14 @@ namespace TodoApp.Controllers
                 return RedirectToAction("SingleTodo");
             }
             return View("Edit");
+        }
+        [HttpPost("{todoid}/Delete")]
+        public IActionResult Delete(int todoid)
+        {
+            TempData["Delete"] = "Deleted Todo";
+            ViewBag.delete = TempData["Delete"]; 
+            _todoFactory.DeleteTodo(todoid);
+            return RedirectToAction("Index");
         }
 
         public IActionResult Error()

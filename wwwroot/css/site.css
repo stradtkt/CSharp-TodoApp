@@ -11,3 +11,8 @@
     position: relative;
     left: 32em;
 }
+.btn-round.card-link {
+    margin: 0 auto;
+    position: relative;
+    left: 37%;
+}

@@ -3,7 +3,7 @@
 
             <div class="row">
                 <div class="col-md-6 offset-3">
-                    <h3>Add Product</h3>
+                    <h3 class="text-center mt-5 mb-5">Add Todo</h3>
                         <form asp-action="CreateTodo" asp-controller="Home" method="POST">
                             <div class="form-group">
                                 <div class="bg-danger">
@@ -21,8 +21,11 @@
                                 <div class="bg-danger">
                                     <span asp-validation-for="due_date"></span>
                                 </div>
-                                <div class="input-group date" id="datetimepicker">
-                                    <input asp-for="due_date" class="form-control datetimepicker" placeholder="DD/MM/YYYY" />
+                                <div class="input-group date">
+                                    <div class="bg-danger">
+                                        <span asp-validation-for="due_date"></span>
+                                    </div>
+                                    <input asp-for="due_date" class="form-control datetimepicker"/>
                                     <div class="input-group-append">
                                         <span class="input-group-text">
                                             <span class="glyphicon glyphicon-calendar"><i class="fa fa-calendar" aria-hidden="true"></i></span>
